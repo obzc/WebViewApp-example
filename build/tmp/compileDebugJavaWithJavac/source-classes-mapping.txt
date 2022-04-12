@@ -1,0 +1,2 @@
+com/example/webviewapp/BuildConfig.java
+ com.example.webviewapp.BuildConfig
