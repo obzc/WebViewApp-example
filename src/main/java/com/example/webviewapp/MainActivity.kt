@@ -14,10 +14,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val mWebView =findViewById<View>(R.id.WebView) as WebView
-        mWebView.loadUrl("https://blog.wmtools.me")
+        mWebView.loadUrl("https://nuxt-appwrite-project.vercel.app/")
         supportActionBar?.hide() // bar gizleme
         val webSettings = mWebView.settings
         webSettings.javaScriptEnabled = true // js disable etme
+        webSettings.domStorageEnabled = true;
+        webSettings.userAgentString = "Mozilla/5.0 (Linux; Android 4.1.1; Galaxy Nexus Build/JRO03C) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19";
         mWebView.webViewClient = WebViewClient()
 
 
